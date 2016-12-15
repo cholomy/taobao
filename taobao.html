@@ -1,0 +1,845 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>淘宝网-淘！我喜欢</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="title">
+	<div class="title_middle">
+		<div class="title_middle_left">
+			<a class="t1" href="https://login.taobao.com/member/login.jhtml?f=top&redirectURL=https%3A%2F%2Fwww.taobao.com%2F%3Fspm%3Da21tz.8260643.1581860521.1.0b6f9S"><span>亲，请登录</span></a>
+			<a class="t2" href="//reg.taobao.com/member/new_register.jhtml?from=tbtop&ex_info=&ex_sign=">免费注册</a>
+            <a class="t3" href="#">手机逛淘宝</a>
+        </div>  <!--title_middle_left结束-->
+        <div class="title_middle_right">
+            <ul class="title_right_list">
+            	<li class="mytaobao" id="mytaobao">
+            	    <a href="//i.taobao.com/my_taobao.htm">我的淘宝</a><span>ˇ</span>
+            	    <div class="mytaobao_out" id="mytaobao_out">
+            	    	<a class="mytaobao_out_top" href="//trade.taobao.com/trade/itemlist/list_bought_items.htm">已买到的宝贝</a>
+            	    	<a href="//lu.taobao.com/newMyPath.htm">我的足迹</a>
+            	    </div>  <!--mytaobao结束-->
+            	</li>
+            	<li class="shoppingcar">
+            	    <a href="https://cart.taobao.com/cart.htm?from=mini&ad_id=&am_id=&cm_id=&pm_id=1501036000a02c5c3739">购物车</a><span>ˇ</span>
+            	</li>
+            	<li class="fav" id="fav">
+            	    <a href="https://shoucang.taobao.com/shop_collect_list.htm">★ 收藏夹</a><span>ˇ</span>
+            	    <div class="fav_out" id="fav_out">
+            	    	<a class="fav_out_top" href="//shoucang.taobao.com/item_collect.htm">收藏的宝贝</a>
+            	    	<a class="fav_out_down" href="//shoucang.taobao.com/shop_collect_list.htm">收藏的店铺</a>
+            	    </div>  <!--fav结束--> 
+            	</li>
+            	<li class="classify">
+            	    <a href="https://www.taobao.com/tbhome/page/market-list">商品分类</a><span>∣</span>
+            	</li>
+            	<li class="seller" id="seller">
+            	    <a href="https://mai.taobao.com/seller_admin.htm">卖家中心</a><span>ˇ</span>
+            	    <div class="seller_out_box" id="seller_out_box">
+            	       <ul class="seller_out" id="seller_out">
+            	    	  <li><a href="//mai.taobao.com/seller_admin.htm">免费开店</a></li>
+            	    	  <li><a href="//trade.taobao.com/trade/itemlist/list_sold_items.htm">已卖出的宝贝</a></li>
+            	    	  <li><a href="//sell.taobao.com/auction/goods/goods_on_sale.htm">出售中的宝贝</a></li>
+            	    	  <li><a href="//fuwu.taobao.com/?tracelog=tbdd">卖家服务市场</a></li>
+            	    	  <li><a href="//daxue.taobao.com/">卖家培训中心</a></li>
+            	    	  <li><a href="//healthcenter.taobao.com/home/health_home.htm">体验中心</a></li>
+            	       </ul>
+            	    </div>  <!--seller_out_box结束-->     
+            	</li>
+            	<li class="coniction" id="coniction">
+            	    <a href="https://service.taobao.com/support/main/service_center.htm?from=newBuyerLead">联系客服</a><span>ˇ</span>
+            	    <div class="coniction_out" id="coniction_out">
+            	    	<a class="coniction_out_top" href="https://service.taobao.com/support/main/service_center.htm">消费者客服</a>
+            	    	<a class="coniction_out_down" href="https://helpcenter.taobao.com/index?from=high">卖家客服</a>
+            	    </div>  <!--coniction_out结束-->   
+            	</li>
+            	<li class="allHttp">
+            	    <a href="https://www.taobao.com/sitemap.php">网站导航</a><span>ˇ</span>
+            	</li>
+            </ul>	
+        </div>  <!--title_middle_right结束-->   
+	</div>  <!--title_middle结束-->   
+</div>  <!--title结束-->  
+<div class="main">
+	<div class="main_middle">
+	    <div class="main_middle_top">
+		     <div class="main_middle_top_left">
+		     	<img src="images/TBgift.gif">
+		     	<div class="deadline_time">距离1212开幕还剩<span>0</span><span>5</span>天</div>
+		     	<div class="fenwei_pic_left">
+		     	     <img src="images/fenwei-left.png">	
+		     	</div>
+		     </div>  <!--main_middle_top_left结束-->  
+             <div class="main_middle_top_right">
+             	  <div class="search_box">
+             	       <div class="search_box_choice">
+             	       	    <ul>
+             	       	    	<li id="baobei">宝贝</li>
+             	       	    	<li id="tianmao">天猫</li>
+             	       	    	<li id="shop">店铺</li>
+             	       	    </ul>
+             	       </div>  <!--search_box_choice结束-->  
+             	  	   <div class="search_box_main">
+             	  	         <div class="search_box_main_left">
+             	  	         	<input type="text" value="年度超值零食榜">
+             	  	         	<div class="left_img">
+             	  	         	   <input type="file" id="buttn_file"><img src="images/search.png">
+             	  	         	</div>
+             	  	         </div>
+             	  	   	     <div class="search_box_main_right">
+             	  	   	         <button>搜索</button>
+             	  	   	     </div>
+             	  	   	     <div class="high_class">
+             	  	   	         <a href="https://list.taobao.com/browse/ad_search.htm?spm=a21bo.50862.201856.1.ZshtD2" target="_blank">
+             	  	   	     	  高级<br>
+             	  	   	     	  搜索
+             	  	   	     	 </a>
+             	  	   	     </div>  <!--high_class结束-->
+             	  	   </div>  <!--search_box_main结束-->
+             	  	   <div class="search_box_bottom">
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.1.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%25A0%25B4%25E5%25A3%2581%25E6%259C%25BA%26refpid%3D430266_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" class="h" data-spm-anchor-id="a21bo.50862.201856-sline.1">破壁机
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.2.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E5%259D%259A%25E6%259E%259C%26refpid%3D430267_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.2">坚果
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.3.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%2594%25B5%25E7%25A3%2581%25E7%2582%2589%26refpid%3D430268_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" class="h" data-spm-anchor-id="a21bo.50862.201856-sline.3">电磁炉
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.4.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%25BA%25B8%25E5%25B7%25BE%26refpid%3D430269_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.4">纸巾</a><a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.5.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%25BA%25A2%25E6%259E%25A3%26refpid%3D430270_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.5">红枣</a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.6.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E9%259B%25B6%25E9%25A3%259F%25E5%25A4%25A7%25E7%25A4%25BC%25E5%258C%2585%26refpid%3D430271_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" class="h" data-spm-anchor-id="a21bo.50862.201856-sline.6">零食大礼包
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.7.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E5%25BA%258A%25E5%259E%25AB%26refpid%3D430272_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.7">床垫
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.8.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%2581%25AF%26refpid%3D430273_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.8">灯
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.9.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E6%258A%25BD%25E7%25BA%25B8%26refpid%3D430274_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.9">抽纸
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.10.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E6%258A%25A4%25E8%2585%25B0%25E5%25B8%25A6%26refpid%3D430275_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.10">护腰带
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.11.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E9%2581%25A5%25E6%258E%25A7%25E9%25A3%259E%25E6%259C%25BA%26refpid%3D430276_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.11">遥控飞机
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.12.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E7%2594%25B5%25E7%2581%25AB%25E9%2594%2585%26refpid%3D430277_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.12">电火锅
+             	  	        </a>
+             	  	        <a href="https://srd.simba.taobao.com/rd?spm=a21bo.50862.201856-sline.13.S3IxwV&w=hotsearch&f=https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%25E5%2590%25B9%25E9%25A3%258E%25E6%259C%25BA%26refpid%3D430278_1006%26source%3Dtbsy%26style%3Dgrid%26tab%3Dall%26pvid%3Dcf63a9039ac822ee28cfa206a9802e9b&k=846ec24316d7252b&p=430266_1006&b=_0_0&pvid=cf63a9039ac822ee28cfa206a9802e9b" data-spm-anchor-id="a21bo.50862.201856-sline.13">吹风机
+             	  	        </a>
+                           <a class="more" href="https://top.taobao.com/?spm=a21bo.50862.201856.3.S3IxwV&topid=home" >更多<i class="tb-icon">></i></a>
+             	  	   </div>   <!--search_box_bottom结束-->  
+             	  </div>  <!--search_box结束-->
+             	  <div class="main_middle_top_right_gif">
+             	  	   <img src="images/TBzhibo.gif">
+             	  </div>  <!--main_middle_top_right_gif结束-->
+             	  <div class="fenwei-right">
+             	  	   <img src="images/fenwei-right.png">
+             	  </div>  <!--fenwei-right结束-->
+             	  <div class="main_middle_top_right_choice">
+             	     <ul class="right_choice_one">
+						<li ><a href="https://www.tmall.com/">天猫</a></li>
+						<li ><a href="https://ju.taobao.com/">聚划算</a></li>
+						<li ><a href="https://chaoshi.tmall.com/">天猫超市</a></li>
+             	     </ul>
+             	     <ul class="right_choice_two">
+						<li class="pipe">|</li>
+						<li><a href="https://qiang.taobao.com/">淘抢购</a></li>
+						<li><a href="https://3c.tmall.com/">电器城</a></li>
+						<li><a href="https://sf.taobao.com/">司法拍卖</a></li>
+						<li><a href="https://q.taobao.com/">中国质造</a></li>
+						<li><a href="https://china.taobao.com/">特色中国</a></li>
+             	     </ul>
+             	     <ul class="right_choice_three">
+						<li class="pipe">|</li>
+						<li ><a href="https://www.alitrip.com/">飞猪旅行</a></li>
+						<li ><a href="https://yun.taobao.com/">智能生活</a></li>
+						<li ><a href="https://suning.tmall.com/">苏宁易购</a></li>
+             	     </ul>             	     
+             	  </div>  <!--main_middle_top_right_choice结束--> 
+             </div>  <!--main_middle_top_right结束-->  
+	    </div>  <!--main_middle_top结束-->  
+	    <div class="main_middle_left">
+		     <div class="main_middle_left_list">
+		          <ul class="left_list">
+						<li>
+						  <i class="tb-icon service-icons">&#xe602;</i>
+						  <span>
+						    <a href="https://www.taobao.com/markets/nvzhuang/taobaonvzhuang">女装</a> /
+						    <a href="https://www.taobao.com/markets/nanzhuang/index2016">男装</a> /
+						    <a href="https://neiyi.taobao.com/">内衣</a>
+						   </span>
+						  <i class="tb-icon service-arrow">&#x27a4;</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons">&#xe604;</i>
+						  <span>
+						    <a href="https://www.taobao.com/markets/xie/nvxie/index">鞋靴</a> /
+						    <a href="https://www.taobao.com/markets/bao/xiangbao">箱包</a> /
+						    <a href="https://pei.taobao.com/">配件</a>
+						  </span>
+						  <i class="tb-icon service-arrow">&#x27a4;</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons">&#xe60b;</i>
+						  <span class="tbh-tag">
+						    <a href="https://www.taobao.com/markets/qbb/index?spm=a21bo.50862.201879-item-1008.5.YrbXb6&pvid=b9f2df4c-6d60-4af4-b500-c5168009831f&scm=1007.12802.34660.100200300000000" >童装</a> /
+						    <a href="https://www.taobao.com/markets/qbb/index?spm=a21bo.50862.201867-main.8.mL7cax&pvid=b9f2df4c-6d60-4af4-b500-c5168009831f&scm=1007.12802.34660.100200300000000">孕产</a> /
+						    <a href="https://www.taobao.com/markets/qbb/index?spm=a21bo.50862.201867-main.8&pvid=b9f2df4c-6d60-4af4-b500-c5168009831f&scm=1007.12802.34660.100200300000000" >用品</a>
+						  </span>
+						  <i class="tb-icon service-arrow">&#x27a4;</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://huodong.taobao.com/wow/tb-20161212/28/pinzhijiadian?wh_weex=true&wh_prefetch_id=28-pinzhijiadian">家电</a> /
+						    <a href="https://huodong.taobao.com/wow/tb-20161212/28/shumajianhuo?wh_weex=true&wh_prefetch_id=28-shumajianhuo">数码</a> /
+						    <a href="https://huodong.taobao.com/wow/tb-20161212/28/shoujijingpin?wh_weex=true&wh_prefetch_id=28-shoujijingpin">手机</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://mei.taobao.com/">美妆</a> /
+						    <a href="https://www.taobao.com/market/baihuo/xihuyongpin.php?spm=a217u.7383845.a214d5z-static.49.e8DQmz">洗护</a> /
+						    <a href="https://g.taobao.com/brand_detail.htm?navigator=all&_input_charset=utf-8&q=%E8%90%A5%E5%85%BB%E5%93%81&spm=a21bo.50862.201867-links-4.54.oMw9IU">保健品</a>
+						  </span>
+						<i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://www.taobao.com/market/peishi/zhubao.php">珠宝</a> /
+						    <a href="https://www.taobao.com/market/peishi/yanjing.php?spm=a219r.lm5630.a214d69.14.CkLAJ7" >眼镜</a> /
+						    <a href="https://www.taobao.com/market/peishi/shoubiao.php">手表</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://www.taobao.com/markets/coolcity/coolcityHome">运动</a> /
+						    <a href="https://www.taobao.com/markets/coolcity/coolcityHome">户外</a> /
+						    <a href="https://www.taobao.com/market/wenyu/yueqi.php">乐器</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span class="tbh-tag">
+						    <a href="https://game.taobao.com/" >游戏</a> /
+							<a href="https://www.taobao.com/markets/acg/dongman" >动漫</a> /
+							<a href="https://list.taobao.com/itemlist/acg.htm?cat=56844016&sd=0&as=0&viewIndex=1&hd=1&spm=a2106.m5463.1000188.1.3c72bM&atype=b&style=grid&same_info=1&tid=0&isnew=2&filter=reserve_price%5B100%2C100000000%5D&_input_charset=utf-8" >影视</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span class="tbh-tag">
+							<a href="https://chi.taobao.com/" >美食</a> /
+							<a href="https://chi.taobao.com/" >生鲜</a> /
+							<a href="https://chi.taobao.com/">零食</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://www.taobao.com/market/xianhua/xianhuayuanyi.php" >鲜花</a> /
+						    <a href="https://www.taobao.com/market/pet/xiaochong.php" >宠物</a> /
+						    <a href="https://ny.taobao.com/">农资</a>
+						 </span>
+						 <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://huodong.taobao.com/wow/tb-20161212/28/fangchan?wh_weex=true&wh_prefetch_id=28-fangchan">房产</a> /
+						    <a href="https://s.taobao.com/list?spm=a21bo.50862.201867-links-10.27.iQWRJS&source=youjia&cat=50097129" >装修</a> /
+						    <a href="https://www.jiyoujia.com/markets/youjia/zhuangxiucailiao">建材</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://s.taobao.com/list?spm=a21bo.7932212.202572.1.rtUtMQ&source=youjia&q=%E5%AE%B6%E5%85%B7">家具</a> /
+						    <a href="https://s.taobao.com/list?source=youjia&cat=50065206%2C50065205">家饰</a> /
+						    <a href="https://s.taobao.com/list?spm=a21bo.50862.201867-links-11.80.K6jN68&source=youjia&cat=50008163&bcoffset=0&s=240" >家纺</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://car.tmall.com/wow/car/act/carfp">汽车</a> /
+						    <a href="https://2car.taobao.com/">二手车</a> /
+						    <a href="https://car.tmall.com/wow/car/act/carfp" >用品</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://www.taobao.com/markets/bangong/pchome" >办公</a> /
+						    <a href="https://www.taobao.com/markets/dingzhi/home">DIY</a> /
+						    <a href="https://wujin.taobao.com/" >五金</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons"></i>
+						  <span>
+						    <a href="https://s.taobao.com/list?source=youjia&q=%E7%99%BE%E8%B4%A7">百货</a> /
+						    <a href="https://s.taobao.com/list?source=youjia&cat=50035867&bcoffset=0&s=240">餐厨</a> /
+						    <a href="https://www.taobao.com/market/jiadian/baojian.php?spm=a21bo.50862.201867-main.46.K6jN68" >保健</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>
+						<li>
+						  <i class="tb-icon service-icons">&#xe61f;</i>
+						  <span>
+						    <a href="https://xue.taobao.com/" >学习</a> /
+						    <a href="https://ka.taobao.com/" >卡券</a> /
+						    <a href="https://life.taobao.com/?spm=a21bo.50862.201867-links-15.47&file=life.taobao.com">服务</a>
+						  </span>
+						  <i class="tb-icon service-arrow">➤</i>
+						</li>		              
+		          </ul>  <!--left_list结束--> 
+                  <div class="left_list_img">
+                  	   <a href="https://huodong.taobao.com/wow/tb-20161212/28/wujindianzi?scm=20140637.1.27959.126759&wh_weex=true&wh_prefetch_id=28-wujindianzi">
+                  	      <img src="images/a.png">
+                  	   </a>
+                  </div>
+		     </div>  <!--main_middle_left_list结束--> 
+		     <div class="main_middle_left_show">
+		     	  <div class="main_middle_left_show_up">
+		     	  	   <div class="main_show">
+		     	  	   	    <div class="main_show_long">
+		     	  	   	         <div class="main_show_long_img">
+		     	  	   	         	<a href="https://1212.tmall.com/?wh_weex=true&pos=1&acm=20140506001.1003.2.1380367&scm=1003.2.20140506001.OTHER_1479677423516_1380367">
+		     	  	   	         		<img src="images/main-show1.jpg_.webp.jpg">
+		     	  	   	         		<span>广告</span>
+		     	  	   	         	</a>
+		     	  	   	         </div>	   <!--main_show_long_img结束--> 
+		     	  	   	         <div class="main_show_long_img">
+		     	  	   	         	<a href="https://click.mz.simba.taobao.com/ecpm?spm=a21bo.50862.201862-2.1.770bi4&e=YR4z4cb3Rwna1LyXcphrUyS30cHSQ8n7Pe2fHzs%2BhI9LhMFG0bePZGqNR6QdImb6wv8v%2FRz%2FwnLfSbD6ELfF3JbmWgui33BvUK7RDtIZydUyXElRAMLwo5FiZpwDPce9H97w0jPRoKRHJcVQ4V%2F2ehiZA5EBe9Ojf8uLh98lVhpNNlZN8ZAZp8B04md0R6GAAT2nMuqCMoXFqiCwSKgZYZWA%2B51FlgNHiv5Ef6UqTWbWnS0bUGreRGQN3yOfsCBClS2eJ5MsUUorIHco%2FkJ0DbdIep6b7r8CkL0vOmJB9pLQOAKV7NlNbuNLFW1AjfFWtUc6EuGFNSq1Hr%2FjD9jtmQngnpg%2FaT9XmxrSk61UDCY%3D&u=https%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D537519391659%26sku_properties%3D1627207%3A28341%26scene%3Dtaobao_shop&k=365">
+		     	  	   	         		<img src="images/main-show2.jpg">
+		     	  	   	         		<span>广告</span>
+		     	  	   	         	</a>
+		     	  	   	         </div>	   <!--main_show_long_two结束--> 
+		     	  	   	         <div class="main_show_long_img">
+		     	  	   	         	<a href="https://click.mz.simba.taobao.com/ecpm?spm=a21bo.50862.201862-3.1.770bi4&e=WCf%2Fmbzikhja1LyXcphrUyS30cHSQ8n7Sdd%2BuYhSF0Aa9dQ5aFrflCAefqr%2FPkuNfV9gJU3LueTuQrB6wgbby40PL%2B%2FF7DlKUK7RDtIZydUyXElRAMLwo1AEKK8jEe5%2BWnGY5HsXYIWNKRWcE%2BMNnQRtUogU2M4zKBcJRwmXNnek2EI%2FJ0wd%2FpSnD71LVhwf5VYKpk5%2FEr4W3jwakMLbmSlfLTAN7HbZoWWWXxywEu%2BXT0TGUfVIYMPRl5dFJoKnlS2eJ5MsUUorIHco%2FkJ0DbdIep6b7r8CkL0vOmJB9pLQOAKV7NlNbuNLFW1AjfFWtUc6EuGFNSq1Hr%2FjD9jtmTCyTg%2B4SHkxmxrSk61UDCY%3D&u=https%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D530483923314%26rn%3D97ae02babde37334efa20fb9e25c129b%26abbucket%3D1%26scene%3Dtaobao_shop&k=365">
+		     	  	   	         		<img src="images/main-show3.jpg">
+		     	  	   	         		<span>广告</span>
+		     	  	   	         	</a>
+		     	  	   	         </div>	   <!--main_show_long_three结束--> 
+		     	  	   	         <div class="main_show_long_img">
+		     	  	   	         	<a href="https://click.mz.simba.taobao.com/ecpm?spm=a21bo.50862.201862-4.1.770bi4&e=BGmkerwqAnna1LyXcphrUyS30cHSQ8n7D7g1FXTIizIknJ%2B4Db%2FBaUjneqWBr5l69wsxEtfw4wX%2FcUPytHh8LxvQn7AUfSsjUK7RDtIZydUyXElRAMLwo4z9EHH1hc4AWij%2BcT37oTpVaetgxOZqcdntANATg4OthFaXpaa7Hr16gRylZWewQNks%2BB41tNyYxAZE3vfNe%2BY2hxzzENF6KxVdKg6Fh%2FPvzpSKq87alBueBxctRXY%2F52RPwQ%2FS9D9s1rfWfUoQlLMMGy2vnAiIctHlicmnEly9odr8dxc35Hxd7emgqqT6E%2Bm%2FkNzE4OfXs1Kr6mpEKUQ5J0bijOkR0W%2BsyFc7I1ohToM7ms03P5Q%3D&u=https%3A%2F%2Fmideaxinchuang.tmall.com%2F%3Fscene%3Dtaobao_shop&k=365">
+		     	  	   	         		<img src="images/main-show4.jpg">
+		     	  	   	         		<span>广告</span>
+		     	  	   	         	</a>
+		     	  	   	         </div>	   <!--main_show_long_four结束--> 
+		     	  	   	         <div class="main_show_long_img">
+		     	  	   	         	<a href="https://huodong.taobao.com/wow/tb-20161212/28/nanzhuang?spm=a21bo.50862.201862-5.d1.770bi4&wh_weex=true&wh_prefetch_id=28-nanzhuang&pos=1&acm=20140506002.1003.2.1380374&scm=1003.2.20140506002.OTHER_1480852580239_1380374">
+		     	  	   	         		<img src="images/main-show5.jpg_.webp.jpg">
+		     	  	   	         		<span>广告</span>
+		     	  	   	         	</a>
+		     	  	   	         </div>	   <!--main_show_long_five结束--> 
+		     	  	   	    </div>  <!--main_show_long结束--> 
+		     	  	   	    <ul class="ball_show">
+		     	  	   	        <li alt="0"></li>
+		     	  	   	        <li alt="1"></li>
+		     	  	   	        <li alt="2"></li>
+		     	  	   	        <li alt="3"></li>
+		     	  	   	        <li alt="4"></li>
+		     	  	   	    </ul>
+		     	  	   	    <div class="main_move">
+		     	  	   	    	<div class="prev">
+		     	  	   	    	     <i class="tb-icon prev_icon">&#xe61e;</i>
+		     	  	   	    	</div>    <!--prev结束--> 
+		     	  	   	    	<div class="next">
+		     	  	   	    	     <i class="tb-icon next_icon">&#xe61d;</i>
+		     	  	   	    	</div>  <!--next结束--> 
+		     	  	   	    </div>  <!--main_move结束--> 
+		     	  	   </div>  <!--main_show结束--> 
+		     	  	   <div class="up_img">
+		     	  	   	    <a href="https://huodong.taobao.com/wow/tb-20161212/28/nanxie?spm=a21bo.50862.201860.1.Jnegmx&scm=20140637.1.29015.130345&wh_weex=true&wh_prefetch_id=28-nanxie">
+		     	  	   	    	<img src="images/up-img.jpg">
+		     	  	   	    </a>
+		     	  	   </div>  <!--up_img结束--> 
+		     	  </div>  <!--main_middle_left_show_up结束--> 
+		     	  <div class="main_middle_left_show_down">
+		     	       <div class="show_down_left">
+		     	       	    <div class="show_down_left_top">
+		     	       	         <div class="show_down_left_top_gif">
+		     	       	         	  <img src="images/mao.gif">
+		     	       	         </div>  <!--show_down_left_top_gif结束-->
+		     	       	         <div class="biguang">
+		     	       	         	  <span>天猫必逛</span>
+		     	       	         	  <em>热门品牌，天天上天猫！</em>
+                                      <strong><i>1</i>/6</strong>
+		     	       	         </div>  <!--biguang结束--> 	
+		     	       	    </div>  <!--show_down_left_top结束--> 
+		     	       	    <div class="main_show_down">
+		     	       	    	 <div class="main_show_down_long">
+		     	       	    	      <div class="long_img one">
+		     	       	    	      	   <a href="https://pages.tmall.com/wow/huanxin/act/refreshment-pc?spm=a21bo.50862.201863-1.d1.Jnegmx&trackInfo=201602246101;490967551;32212;527071046381;3;32212_527071046381;1007.13362.64264.100200300000000;8b69c4ce-15c0-4d54-914d-78fac3f3c797&item_id=527071046381&pvid=&pos=1&activity_id=32212&acm=201602246-1.1003.2.1341474&scm=1003.2.201602246-1.OTHER_1481908391372_1341474">
+                                              <img src="images/1/1-1.jpg" alt="">
+                                           </a>
+										   <a href="https://pages.tmall.com/wow/huanxin/act/mustbuy?spm=a21bo.50862.201863-1.d2.Jnegmx&trackInfo=201602246201;-1;32213;-1;-1;-1;1007.13362.64264.100200300000000;8b69c4ce-15c0-4d54-914d-78fac3f3c797&item_id=-1&pvid=&pos=2&activity_id=32213&acm=201602246-2.1003.2.1358508&scm=1003.2.201602246-2.OTHER_1479443198985_1358508">
+										      <img src="images/1/1-2.jpg" alt="">
+										   </a>
+										   <a href="https://shouji.tmall.com?spm=a21bo.50862.201863-1.d3.Jnegmx&trackInfo=201602246301;491000101;32214;529733180337;3;32214_529733180337;1007.13362.64264.100200300000000;8b69c4ce-15c0-4d54-914d-78fac3f3c797&item_id=529733180337&pvid=&pos=3&activity_id=32214&acm=201602246-3.1003.2.1341486&scm=1003.2.201602246-3.OTHER_1479748084181_1341486">
+										      <img src="images/1/1-3.jpg" alt="">
+										   </a>
+											<a href="https://ku.tmall.com?spm=a21bo.50862.201863-1.d4.Jnegmx&trackInfo=201602246401;491000261;32215;529690857316;3;32215_529690857316;1007.13362.64264.100200300000000;8b69c4ce-15c0-4d54-914d-78fac3f3c797&item_id=529690857316&pvid=&pos=4&activity_id=32215&acm=201602246-4.1003.2.1341503&scm=1003.2.201602246-4.OTHER_1481970769083_1341503">
+											   <img src="images/1/1-4.jpg" alt="">
+											</a>
+											<a href="//miao.tmall.com/?spm=a21bo.50862.201863-1.d5.Jnegmx&trackInfo=201602246501;491000611;32216;538765395678;3;32216_538765395678;1007.13362.64264.100200300000000;8b69c4ce-15c0-4d54-914d-78fac3f3c797&item_id=538765395678&pvid=&pos=5&activity_id=32216&acm=201602246-5.1003.2.1341516&scm=1003.2.201602246-5.OTHER_1480151888239_1341516">
+											   <img src="images/1/1-5.jpg" alt="">
+											</a>     
+		     	       	    	      </div>  <!--long_img 1结束--> 
+		     	       	    	      <div class="long_img two">
+		     	       	    	            <a href="https://pages.tmall.com/wow/act/16814/industry_oq2s_3468?spm=a21bo.50862.201863-2.d1.Jnegmx&wh_weex=true&trackInfo=201610103100101;1327025852;35170;530840506473;3;35170_530840506473;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=530840506473&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=1&activity_id=35170&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_35170_1276855"  style="background-color:#DBF3FF;">
+											   <img src="images/2/2-1.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_3bt1_3381?spm=a21bo.50862.201863-2.d2.Jnegmx&wh_weex=true&trackInfo=201610103100101;1361390232;35288;528429065191;3;35288_528429065191;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=528429065191&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=2&activity_id=35288&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_35288_1276855"
+											style="background-color:#FFECF0;">
+											   <img src="images/2/2-2.jpg.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_47c4_3423?spm=a21bo.50862.201863-2.d3.Jnegmx&wh_weex=true&trackInfo=201610103100101;1279827992;34812;540683435540;3;34812_540683435540;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=540683435540&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=3&activity_id=34812&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_34812_1276855"
+											style="background-color:#FFECF0;">
+											   <img src="images/2/2-3.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_k7su_3376?spm=a21bo.50862.201863-2.d4.Jnegmx&wh_weex=true&trackInfo=201610103100101;1434870272;35972;537173870848;3;35972_537173870848;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=537173870848&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=4&activity_id=35972&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_35972_1276855"
+											style="background-color:#DBF3FF;">
+											   <img src="images/2/4.png" alt="">
+											</a>
+		     	       	    	      </div>  <!--long_img 2结束-->
+		     	       	    	      <div class="long_img three">
+		     	       	    	      	    <a href="https://pages.tmall.com/wow/act/16814/industry_c7r9_3412?spm=a21bo.50862.201863-3.d1.Jnegmx&wh_weex=true&trackInfo=201610103100101;1127671412;33835;537050226211;3;33835_537050226211;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=537050226211&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=5&activity_id=33835&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_33835_1276855"
+		     	       	    	      	    style="background-color:#DBF3FF;">
+											<img src="images/3/3-1.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_3o4w_3465?spm=a21bo.50862.201863-3.d2.Jnegmx&wh_weex=true&trackInfo=201610103100101;1154633092;34188;541224734670;3;34188_541224734670;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=541224734670&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=6&activity_id=34188&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_34188_1276855"
+											style="background-color:#FFECF0;">
+											   <img src="images/3/3-2.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_hxm8_3362?spm=a21bo.50862.201863-3.d3.Jnegmx&wh_weex=true&trackInfo=201610103100101;1303721822;35076;520416956440;3;35076_520416956440;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=520416956440&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=7&activity_id=35076&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_35076_1276855"
+											style="background-color:#FFF;">
+											   <img src="images/3/3-3.png" alt="">
+											</a>
+											<a href="https://pages.tmall.com/wow/act/16814/industry_ibxt_3393?spm=a21bo.50862.201863-3.d4.Jnegmx&wh_weex=true&trackInfo=201610103100101;1297075542;34899;538287048575;3;34899_538287048575;1007.13362.64264.100200300000000;57f7daab-b144-4931-b69f-e93a3c96c853&item_id=538287048575&pvid=57f7daab-b144-4931-b69f-e93a3c96c853&pos=8&activity_id=34899&acm=07085.1003.1.1276855&scm=1003.1.07085.OTHER_34899_1276855"
+											style="background-color:#DBF3FF;">
+											   <img src="images/3/3-4.png" alt="">
+											</a>
+									  </div>  <!--long_img 3结束-->
+		     	       	    	      <div class="long_img four">
+		     	       	    	            <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d1.770bi4&amp;user_number_id=362027364&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=1&amp;abbucket=_AB-M65_B11&amp;brandId=110074&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+		     	       	    	               <img src="images/4/4-1.jpg" alt="">
+		     	       	    	            </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d2.770bi4&amp;user_number_id=890482188&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=2&amp;abbucket=_AB-M65_B11&amp;brandId=20578&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-2.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d3.770bi4&amp;user_number_id=446338500&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=3&amp;abbucket=_AB-M65_B11&amp;brandId=20579&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-3.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d4.770bi4&amp;user_number_id=821690375&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=4&amp;abbucket=_AB-M65_B11&amp;brandId=134437850&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-4.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d5.770bi4&amp;user_number_id=642320867&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=5&amp;abbucket=_AB-M65_B11&amp;brandId=45448&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-5.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d6.770bi4&amp;user_number_id=1818471701&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=6&amp;abbucket=_AB-M65_B11&amp;brandId=3889310&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-6.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d7.770bi4&amp;user_number_id=520557274&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=7&amp;abbucket=_AB-M65_B11&amp;brandId=20584&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-7.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d8.770bi4&amp;user_number_id=385132127&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=8&amp;abbucket=_AB-M65_B11&amp;brandId=3424764&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-8.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d9.770bi4&amp;user_number_id=1714128138&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=9&amp;abbucket=_AB-M65_B11&amp;brandId=3506680&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-9.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d10.770bi4&amp;user_number_id=2037432060&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=10&amp;abbucket=_AB-M65_B11&amp;brandId=3270580&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000" data-spm="d10">
+                                           <img src="images/4/4-10.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d11.770bi4&amp;user_number_id=669642169&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=11&amp;abbucket=_AB-M65_B11&amp;brandId=29877&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-11.jpg" alt="">
+                                           </a>
+                                           <a href="//store.taobao.com/shop/view_shop.htm?spm=a21bo.50862.201863-4.d12.770bi4&amp;user_number_id=730053232&amp;abtest=_AB-LR65-PR65&amp;pvid=a638e8a6-9221-4db7-a857-858364c29f67&amp;pos=12&amp;abbucket=_AB-M65_B11&amp;brandId=94136&amp;acm=03014.1003.1.765824&amp;scm=1007.13143.56636.100200300000000">
+                                              <img src="images/4/4-12.jpg" alt="">
+                                           </a>		     	       	    	      	   
+		     	       	    	      </div>  <!--long_img 4结束-->
+		     	       	    	      <div class="long_img five">
+		     	       	    	      	   <a href="https://youchen.tmall.com/?spm=a21bo.50862.201863-5.d1.770bi4&amp;pos=1&amp;acm=201608180-1.1003.1.1130423&amp;scm=1003.1.201608180-1.OTHER_17678-C1S1_1130423">
+		     	       	    	      	   <img src="images/5/5-1.jpg" alt="">
+		     	       	    	      	   </a> 
+		     	       	    	      	   <a href="https://fotile.tmall.com?spm=a21bo.50862.201863-5.d2.770bi4&amp;pos=2&amp;acm=201608180-2.1003.1.1130428&amp;scm=1003.1.201608180-2.OTHER_17667-C1S1_1130428">
+		     	       	    	      	      <img src="images/5/5-2.jpg" alt="">
+		     	       	    	      	   </a>  
+		     	       	    	      </div>  <!--long_img 5结束-->
+		     	       	    	      <div class="long_img six">
+		     	       	    	      	   <a href="https://click.mz.simba.taobao.com/ecpm?spm=a21bo.50862.201863-6.1.770bi4&amp;e=ic0NjrIYPy7a1LyXcphrUyS30cHSQ8n7bQKA4%2FVbNQumlR28eyI3rSbz6L6xwupVVauRYmBRXS1PScRw7Zhog4PZvsjBGFFFUK7RDtIZydUyXElRAMLwowKskFb36qcvfuvMfpck9nBPTAOtDs0NJknz4tG39z7lZTWIYaONsxz9xqbMD1bf2eJkBcAY0Zh99UiqOJ3Iy%2BPji1TBe%2FeruUygkt5mL4UlVgkl2DyEigzQCsTTA5Jkwu6rjYwkThaClS2eJ5MsUUorIHco%2FkJ0DbdIep6b7r8CkL0vOmJB9pLQOAKV7NlNbuNLFW1AjfFWtUc6EuGFNSq1Hr%2FjD9jtmTCyTg%2B4SHkxmxrSk61UDCY%3D&amp;u=https%3A%2F%2Fferrero.tmall.com%2Findex.htm&amp;k=365" target="_blank">
+		     	       	    	      	      <img src="images/6/6-1.jpg" alt="">
+		     	       	    	      	   </a>
+		     	       	    	      	   <div class="six_two">
+                                           <a href="https://click.mz.simba.taobao.com/ecpm?spm=a21bo.50862.201863-6.2.770bi4&amp;e=u%2F2I86nBCo3a1LyXcphrUyS30cHSQ8n7bQKA4%2FVbNQsIx49WMI3NHlz6uVifxUxfVauRYmBRXS19PzEoNVp7pLtuUM8Q%2FXNkUK7RDtIZydUyXElRAMLwo3HRAfgh6mDaFztc41GBj8kGUdOuyar%2BxmTTh%2FFOVKOm4f6W8PeuTm4WLe68LMEyrbuhlda3EGL1aaebhPyRBsdYAgBi4Zr5XRVdKg6Fh%2FPvx8lxnBUJoQ51csVgP8CzYMwNkBjECxvevqJPLPcjDe%2BVynqJG6N0%2BhRclptaOGZm2NjEHnQ1VJHy58Jrs2izrepMqD5SPJEuxgvpsTDgVloqStnr6Vxus08jVHDaZZikywtHknFQdRM%3D&amp;u=https%3A%2F%2Fkfc.tmall.com&amp;k=365" target="_blank">
+                                              <img src="images/6/6-2.jpg" alt="">
+                                           </a>
+                                           </div>
+		     	       	    	      </div>  <!--long_img 6结束-->	
+		     	       	    	 </div>  <!--main_show_down_long结束-->
+		     	       	    	 <ul class="ball_show2">
+			     	  	   	         <li alt="0"></li>
+			     	  	   	         <li alt="1"></li>
+			     	  	   	         <li alt="2"></li>
+			     	  	   	         <li alt="3"></li>
+			     	  	   	         <li alt="4"></li>
+			     	  	   	         <li alt="5"></li>
+		     	  	   	         </ul>
+			     	  	   	     <div class="main_move2">
+				     	  	   	     <div class="prev2">
+				     	  	   	    	  <i class="tb-icon prev_icon2">&#xe61e;</i>
+				     	  	   	     </div>    <!--prev2结束--> 
+				     	  	   	     <div class="next2">
+				     	  	   	    	  <i class="tb-icon next_icon2">&#xe61d;</i>
+				     	  	   	     </div>  <!--next2结束--> 
+			     	  	   	    </div>  <!--main_move2结束-->  
+		     	       	    </div>  <!--main_show_down结束--> 
+		     	       </div>  <!--show_down_left结束--> 
+		     	       <div class="show_down_right">
+		     	       	    <div class="show_down_right_top">今日热卖</div>
+		     	       	    <img src="images/down-img.jpg">
+		     	       </div>  <!--show_down_right结束-->   	
+		     	  </div>  <!--main_middle_left_show_down结束--> 
+		     </div>  <!--main_middle_left_show结束-->
+		     <div class="main_middle_left_bottom">
+		          <div class="left_bottom_main">
+		          	   <a href="//www.taobao.com/markets/tbhome/crowd-guide?spm=a21bo.50862.201868.1.3cYI7C&id=1161&itemId=536879247733&pvid=77b0d657-7ff5-48f8-929e-762c7107c1ef&scm=1007.12952.67161.100200300000000"
+		          	   class="color0">
+		          	      <img src="images/circle/c1.png">
+		          	   	  <strong>有车一族</strong>
+		          	   	  <span>定义车生活</span>
+		          	   	  <em>
+		          	   	  	 <i class="tb-icon"></i>
+		          	   	  	 人气2059602
+		          	   	  </em>
+		          	   </a>
+		          	   <a href="//www.taobao.com/markets/tbhome/crowd-guide?spm=a21bo.50862.201868.1.3cYI7C&id=1161&itemId=536879247733&pvid=77b0d657-7ff5-48f8-929e-762c7107c1ef&scm=1007.12952.67161.100200300000000"
+		          	   class="color1">
+		          	      <img src="images/circle/c2.jpg">
+		          	   	  <strong>囤货一族</strong>
+		          	   	  <span>会囤会生活</span>
+		          	   	  <em>
+		          	   	  	 <i class="tb-icon"></i>
+		          	   	  	 人气749263
+		          	   	  </em>
+		          	   </a>
+		          	   <a href="//www.taobao.com/markets/tbhome/crowd-guide?spm=a21bo.50862.201868.1.3cYI7C&id=1161&itemId=536879247733&pvid=77b0d657-7ff5-48f8-929e-762c7107c1ef&scm=1007.12952.67161.100200300000000"
+		          	   class="color3">
+		          	      <img src="images/circle/c3.jpg">
+		          	   	  <strong>女神范</strong>
+		          	   	  <span>就是要你好看</span>
+		          	   	  <em>
+		          	   	  	 <i class="tb-icon"></i>
+		          	   	  	 人气5156160
+		          	   	  </em>
+		          	   </a>
+		          	   <a href="//www.taobao.com/markets/tbhome/crowd-guide?spm=a21bo.50862.201868.1.3cYI7C&id=1161&itemId=536879247733&pvid=77b0d657-7ff5-48f8-929e-762c7107c1ef&scm=1007.12952.67161.100200300000000"
+		          	   class="color3">
+		          	      <img src="images/circle/c4.jpg">
+		          	   	  <strong>健身狂人</strong>
+		          	   	  <span>我们都爱腹肌</span>
+		          	   	  <em>
+		          	   	  	 <i class="tb-icon"></i>
+		          	   	  	 人气194271
+		          	   	  </em>
+		          	   </a>
+		          	   <a href="//www.taobao.com/markets/tbhome/crowd-guide?spm=a21bo.50862.201868.1.3cYI7C&id=1161&itemId=536879247733&pvid=77b0d657-7ff5-48f8-929e-762c7107c1ef&scm=1007.12952.67161.100200300000000"
+		          	   class="color4">
+		          	      <img src="images/circle/c5.jpg">
+		          	   	  <strong>吃货的后裔</strong>
+		          	   	  <span>翻滚吧美食君</span>
+		          	   	  <em>
+		          	   	  	 <i class="tb-icon"></i>
+		          	   	  	 人气1067497
+		          	   	  </em>
+		          	   </a>		          	   
+		          </div>  <!--left_bottom_main结束--> 	  
+		     </div>  <!--main_middle_left_bottom结束--> 
+	    </div>  <!--main_middle_left结束-->  
+	    <div class="main_middle_right">
+	         <div class="loading">
+	              <div class="head_img">
+	              	   <img src="images/headimg.jpg">
+	              </div>  <!--head_img结束--> 	
+	              <div class="user_name"><span>Hi!</span>你好！</div>
+	              <div class="address">
+	                   <a href="https://taojinbi.taobao.com/index.htm?spm=a21bo.50862.201864-1.d1.770bi4">领淘金币抵钱</a> 或去 <a href="https://vip.taobao.com/?spm=a21bo.50862.201864-1.5.770bi4">会员俱乐部</a></div>
+	              <div class="loading_buttons">
+	              	   <button class="load">登陆</button>
+	              	   <button class="zhuce">注册</button>
+	              	   <button class="open_shop">开店</button>
+	              </div>
+	         </div>  <!--loading结束--> 
+	         <div class="notice">
+	         	  <ul class="notice_title">
+	         	  	<li>公告</li>
+	         	  	<li>规则</li>
+	         	  	<li>论坛</li>
+	         	  	<li>安全</li>
+	         	  	<li>公益</li>
+	         	  </ul>
+	         	  <div class="notice_main">
+		         	   <ul class="notice_main1">
+		         	  	 <li>
+		         	  	   <a href="https://press.taobao.com/detail.html?spm=0.0.0.0.fH6H2y&postId=7336514"  class="h"> 阿里与移动签署协议</a>
+		         	  	 </li>
+		         	   	 <li>
+		         	   	   <a href="https://press.taobao.com/detail.html?spm=0.0.0.0.fH6H2y&postId=7336514"> 
+		         	   	   阿里股价逆市上扬</a>
+		         	   	 </li>
+		         	  	 <li>
+                           <a href="https://press.taobao.com/detail.html?spm=0.0.0.0.JO1y6b&postId=7326699"> 
+		         	  	   淘宝2016双12“亲亲</a>
+		         	  	 </li>
+		         	  	 <li>
+                           <a href="https://press.taobao.com/detail.html?spm=a21bo.50862.201865-0.3.770bi4&postId=7332556"> 
+		         	  	   闲鱼年底宣布增员</a>
+		         	  	 </li>
+		         	  </ul>
+		         	   <ul class="notice_main2">
+		         	  	 <li>
+		         	  	   <a href="https://rule.taobao.com/detail-4949.htm?spm=a2177.7231193.0.0.y5R0sB&tag=self&cId=82"> 
+		         	  	   不正当谋利规则变更</a>
+		         	  	 </li>
+		         	   	 <li>
+		         	   	   <a href="https://rule.taobao.com/detail-4946.htm?spm=a2177.7231193.0.0.y5R0sB&tag=self&cId=82"> 
+		         	   	   淘宝亲宝贝市场管理</a>
+		         	   	 </li>
+		         	  	 <li>
+                           <a href="https://rule.taobao.com/detail-4880.htm?spm=a21bo.50862.201865.3.770bi4&tag=self&cId=82" 
+                            class="h"> 
+		         	  	   淘宝价格发布规范变更</a>
+		         	  	 </li>
+		         	  	 <li>
+                           <a href="https://rule.taobao.com/detail-4864.htm?spm=a2177.7231193.0.0.y5R0sB&tag=self&cId=82"> 
+		         	  	   店铺相关规则调整变</a>
+		         	  	 </li>
+		         	  </ul>
+		         	   <ul class="notice_main3">
+		         	  	 <li>
+		         	  	   <a href="https://dacu.bbs.taobao.com/list.html" class="h"> 
+		         	  	   双十二开始报名啦</a>
+		         	  	 </li>
+		         	   	 <li>
+		         	   	   <a href="https://zt.bbs.taobao.com/detail.html?spm=a210m.8245343.0.0.LVQtnn&postId=7277158"> 
+		         	   	   淘宝论坛招募志愿者</a>
+		         	   	 </li>
+		         	  	 <li>
+                           <a href="https://daxue.taobao.com/markets/daxue/mastermoment?spm=a21bo.50862.201865.7.770bi4"> 
+		         	  	   名师一刻-5个亿的秘</a>
+		         	  	 </li>
+		         	  	 <li>
+                           <a href="https://chuangye.bbs.taobao.com/detail.html?spm=a210m.7699126.0.0.S0YShI&postId=6530789"> 
+		         	  	   十八纸颠覆家具想象</a>
+		         	  	 </li>
+		         	  </ul>	
+		         	   <ul class="notice_main4">
+		         	  	 <li>
+		         	  	   <a href="https://h5.m.taobao.com/qn/pc/niuba/niuba-feeds.html?spm=0.0.0.0.JerwNh#/detail/10051094?_k=d4j90u" class="h"> 
+		         	  	   差点我都信了！</a>
+		         	  	 </li>
+		         	   	 <li>
+		         	   	   <a href="https://h5.m.taobao.com/qn/pc/niuba/niuba-feeds.html?spm=0.0.0.0.JerwNh#/detail/10046040?_k=d4j90u" class="h"> 
+		         	   	   重交“保证金”？</a>
+		         	   	 </li>
+		         	  	 <li>
+                           <a href="https://h5.m.taobao.com/qn/pc/niuba/niuba-feeds.html?spm=0.0.0.0.SkF5gv#/detail/10035579?_k=d4j90u" class="h"> 
+		         	  	   半路货被劫了！</a>
+		         	  	 </li>
+		         	  	 <li>
+                           <a href="https://h5.m.taobao.com/qn/pc/niuba/niuba-feeds.html?spm=0.0.0.0.P7NJhs#/detail/10023899?_k=d4j90u" class="h"> 
+		         	  	   许多卖家收到了这条</a>
+		         	  	 </li>
+		         	  </ul>	
+		         	   <ul class="notice_main5">
+		         	  	 <li>
+		         	  	   <a href="https://gongyi.bbs.taobao.com/detail.html?postId=7277189" class="h"> 
+		         	  	   闲鱼公益上线招募</a>
+		         	  	 </li>
+		         	   	 <li>
+		         	   	   <a href="https://fmcenter.taobao.com/message/pc/get.html?msg_id=9220137364806860276&session=1beec0000f5e036af25220ed3ae7fe6ad4eb824811d4383dedb5e711841968&user_id=711841968&from=fm_msgcenter"> 
+		         	   	   阿里与残联出助残政</a>
+		         	   	 </li>
+		         	  	 <li>
+                           <a href="https://gongyi.bbs.taobao.com/detail.html?spm=a21bo.7724922.8439-4.3.1dq6d8&postId=816539"> 
+		         	  	   公益宝贝卖家发票索</a>
+		         	  	 </li>
+		         	  	 <li>
+                           <a href="https://gongyi.bbs.taobao.com/detail.html?spm=a21bo.7724922.8439-4.4.1dq6d8&postId=816501"> 
+		         	  	   公益机构淘宝开店攻略</a>
+		         	  	 </li>
+		         	  </ul>			         	  
+	         	  </div>  <!--notice_main结束--> 	
+	         </div>  <!--notice结束-->
+	         <div class="services">
+	              <ul class="services_img">
+	              	  <li class="min">
+	              	  	  <a href="//wt.taobao.com/?ks-menu=cz">
+                             <span class="conve-item-icon tbh-icon1"></span>
+                             <p>充话费</p>
+                          </a>
+	              	  </li>
+	              	  <li class="normal">
+                          <a href="//game.taobao.com">
+                             <span class="conve-item-icon tbh-icon2"></span>
+                             <p>游戏</p>
+                          </a>
+	              	  </li>
+	              	  <li class="normal">
+	              	  	  <a href="//trip.taobao.com">
+                             <span class="conve-item-icon tbh-icon3"></span>
+							 <p>旅行</p>
+						  </a>
+	              	  </li>
+	              	  <li class="min">
+	              	  	  <a href="//baoxian.taobao.com/">
+	                         <span class="conve-item-icon tbh-icon4"></span>
+	                         <p>车险</p>
+	                         </a>
+	              	  </li>
+	              	  <li class="min">
+	              	      <a href="//caipiao.taobao.com/?t=1&ad_id=&am_id=13010663204b41fb5276&cm_id=&pm_id=" >
+                              <span class="conve-item-icon tbh-icon5"></span>
+                              <p>彩票</p>
+                              </a>
+	              	  </li>
+	              	  <li class="normal">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon6"></span>
+                             <p>电影</p>
+                             </a>	
+	              	  </li>
+	              	  <li class="normal">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="tbh-icon7"></span>
+                             <p>找外卖</p>
+                             </a>		              	  	
+	              	  </li>
+	              	  <li class="min">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon8"></span>
+                             <p>理财</p>
+                             </a>	
+	              	  </li>
+	              	  <li class="min">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon9"></span>
+                             <p>找服务</p>
+                             </a>	
+	              	  </li>
+	              	  <li class="normal">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon10"></span>
+                             <p>伊音乐</p>
+                             </a>	
+	              	  </li>
+	              	  <li class="normal">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon11"></span>
+                             <p>水煤电</p>
+                             </a>	
+	              	  </li>
+	              	  <li class="min">
+	              	      <a href="//dianying.taobao.com">
+                             <span class="conve-item-icon tbh-icon12"></span>
+                             <p>火车票</p>
+                             </a>	
+	              	  </li>
+	              </ul>
+	         </div>  <!--services结束--> 
+	         <div class="APP">
+	         	       <h3>阿里APP
+                       <a class="more" href="https://www.taobao.com/tbhome/page/app-lists?spm=a21bo.50862.201869.1.3cYI7C" data-spm-anchor-id="a21bo.50862.201869.1">更多<i class="tb-icon">➤</i></a>
+	         	       </h3>
+	         	  	   <ul class="APP-img">
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/1.jpg">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/1taobao.jpg">
+	         	  	   	   	 	  <p>扫一扫淘宝</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/2.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/2tianmao.png">
+	         	  	   	   	 	  <p>扫一扫天猫</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/3.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/3juhuasuan.png">
+	         	  	   	   	 	  <p>扫一扫聚划算</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/4.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/4zhifubao.png">
+	         	  	   	   	 	  <p>扫一扫支付宝</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/5.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/5wangwang.png">
+	         	  	   	   	 	  <p>扫一扫旺旺</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/6.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/6qiandun.jpg">
+	         	  	   	   	 	  <p>扫一扫钱盾</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/7.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/7dingding.png">
+	         	  	   	   	 	  <p>扫一扫钉钉</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/8.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/8tudou.png">
+	         	  	   	   	 	  <p>扫一扫土豆</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/9.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/9youku.jpg">
+	         	  	   	   	 	  <p>扫一扫优酷</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   	   <li>
+	         	  	   	   	 <img src="images/APP/10.png">
+	         	  	   	   	 <div class="ma">
+	         	  	   	   	 	  <img src="images/ma/10taopiao.png">
+	         	  	   	   	 	  <p>扫一扫淘票</p>
+	         	  	   	   	 </div>
+	         	  	   	   </li>
+	         	  	   </ul>
+	         </div>	<!--APP结束-->  	 
+	    </div>	<!--main_middle_right结束-->  
+	</div>  <!--main_middle结束-->  
+</div>  <!--main结束-->  
+</body>
+</html>
